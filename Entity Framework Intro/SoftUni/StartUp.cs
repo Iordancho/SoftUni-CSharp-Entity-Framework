@@ -11,21 +11,22 @@ namespace SoftUni
         static void Main(string[] args)
         {
             SoftUniContext context = new SoftUniContext();
-            //Console.WriteLine(GetEmployeesFullInformation(context));
-            //Console.WriteLine(GetEmployeesWithSalaryOver50000(context));
-            //Console.WriteLine(GetEmployeesFromResearchAndDevelopment(context));
-            //Console.WriteLine(AddNewAddressToEmployee(context));
-            //Console.WriteLine(GetEmployeesInPeriod(context));
-            //Console.WriteLine(GetAddressesByTown(context));
-            //Console.WriteLine(GetEmployee147(context));
-            //Console.WriteLine(GetDepartmentsWithMoreThan5Employees(context));
-            //Console.WriteLine(GetLatestProjects(context));
-            //Console.WriteLine(IncreaseSalaries(context));
-            //Console.WriteLine(GetEmployeesByFirstNameStartingWithSa(context));
-            //Console.WriteLine(DeleteProjectById(context));
+            Console.WriteLine(GetEmployeesFullInformation(context));
+            Console.WriteLine(GetEmployeesWithSalaryOver50000(context));
+            Console.WriteLine(GetEmployeesFromResearchAndDevelopment(context));
+            Console.WriteLine(AddNewAddressToEmployee(context));
+            Console.WriteLine(GetEmployeesInPeriod(context));
+            Console.WriteLine(GetAddressesByTown(context));
+            Console.WriteLine(GetEmployee147(context));
+            Console.WriteLine(GetDepartmentsWithMoreThan5Employees(context));
+            Console.WriteLine(GetLatestProjects(context));
+            Console.WriteLine(IncreaseSalaries(context));
+            Console.WriteLine(GetEmployeesByFirstNameStartingWithSa(context));
+            Console.WriteLine(DeleteProjectById(context));
             Console.WriteLine(RemoveTown(context));
         }
 
+        //PROBLEM 3
         public static string GetEmployeesFullInformation(SoftUniContext context)
         {
             var employees = context.Employees
@@ -43,6 +44,7 @@ namespace SoftUni
                 employees.Select(e => $"{e.FirstName} {e.LastName} {e.MiddleName} {e.JobTitle} {e.Salary:f2}"));
             return result;
         }
+        //PROBLEM 4
         public static string GetEmployeesWithSalaryOver50000(SoftUniContext context)
         {
             var employees = context.Employees
@@ -59,6 +61,7 @@ namespace SoftUni
             
             return result;
         }
+        //PROBLEM 5
         public static string GetEmployeesFromResearchAndDevelopment(SoftUniContext context)
         {
             var employees = context.Employees
@@ -77,6 +80,7 @@ namespace SoftUni
             
             return result;
         }
+        //PROBLEM 6
         public static string AddNewAddressToEmployee(SoftUniContext context)
         {
             Address address = new Address()
@@ -105,6 +109,7 @@ namespace SoftUni
             return result;
 
         }
+        //PROBLEM 7
         public static string GetEmployeesInPeriod(SoftUniContext context)
          {
              var employees = context.Employees
@@ -146,6 +151,7 @@ namespace SoftUni
         
              return result.ToString().Trim();
          }
+        //PROBLEM 8
         public static string GetAddressesByTown(SoftUniContext context)
         {
             var addresses = context.Addresses
@@ -163,6 +169,7 @@ namespace SoftUni
              return string.Join(Environment.NewLine,
                 addresses.Select(a => $"{a.AddressText}, {a.TownName} - {a.EmployeeCount} employees"));
         }
+        //PROBLEM 9
         public static string GetEmployee147(SoftUniContext context)
         {
             var employee = context.Employees
@@ -187,6 +194,7 @@ namespace SoftUni
             
             return result.ToString().Trim();
         }
+        //PROBLEM 10
         public static string GetDepartmentsWithMoreThan5Employees(SoftUniContext context)
         {
             var departments = context.Departments
@@ -223,6 +231,7 @@ namespace SoftUni
 
             return result.ToString().Trim();
         }
+        //PROBLEM 11
         public static string GetLatestProjects(SoftUniContext context)
         {
             var projects = context.Projects
@@ -247,6 +256,7 @@ namespace SoftUni
 
             return result.ToString().Trim();
         }
+        //PROBLEM 12
         public static string IncreaseSalaries(SoftUniContext context)
         {
             var employees = context.Employees
@@ -264,6 +274,7 @@ namespace SoftUni
             return string.Join(Environment.NewLine,
                 employees.Select(e => $"{e.FirstName} {e.LastName} (${e.Salary:f2})"));
         }
+        //PROBLEM 13
         public static string GetEmployeesByFirstNameStartingWithSa(SoftUniContext context)
         {
             var employees = context.Employees
@@ -282,6 +293,7 @@ namespace SoftUni
             return string.Join(Environment.NewLine,
                 employees.Select(e => $"{e.FirstName} {e.LastName} - {e.JobTitle} - (${e.Salary:f2})"));
         }
+        //PROBLEM 14
         public static string DeleteProjectById(SoftUniContext context)
         {
             var employeesProjectsToDelete = context.EmployeesProjects
@@ -306,7 +318,7 @@ namespace SoftUni
 
             return result.ToString().Trim();
         }
-
+        //PROBLEM 15
         public static string RemoveTown(SoftUniContext context)
         {
             var town = context.Towns
