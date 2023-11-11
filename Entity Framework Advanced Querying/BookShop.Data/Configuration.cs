@@ -1,0 +1,10 @@
+﻿namespace BookShop.Data
+{
+    internal class Configuration
+    {
+        internal static string ConnectionString
+            => "Server=.;Database=BookShop;User Id=sa;Password=reallyStrongPwd123;" +
+               "TrustServerCertificate=true;";
+
+    }
+}
