@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dani_\\OneDrive\\Desktop\\05.LINQ-Exercises-MusicHub-6.0\\MusicHub\\MusicHub.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dani_\\OneDrive\\Desktop\\05.LINQ-Exercises-MusicHub-6.0\\MusicHub\\MusicHub.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dani_\\OneDrive\\Desktop\\05.LINQ-Exercises-MusicHub-6.0\\MusicHub\\MusicHub.csproj",
+        "projectName": "MusicHub",
+        "projectPath": "C:\\Users\\dani_\\OneDrive\\Desktop\\05.LINQ-Exercises-MusicHub-6.0\\MusicHub\\MusicHub.csproj",
+        "packagesPath": "C:\\Users\\dani_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dani_\\OneDrive\\Desktop\\05.LINQ-Exercises-MusicHub-6.0\\MusicHub\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dani_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
